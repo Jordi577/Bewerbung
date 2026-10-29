@@ -1,0 +1,121 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{lmodern}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=1.2em, nosep, topsep=2pt}
+\urlstyle{same}
+
+% Einheitliche Gestaltung; Abstände hier zentral anpassen.
+\newcommand{\cvsection}[1]{%
+  \par\addvspace{10pt}%
+  {\large\bfseries #1}\par\nobreak
+  \vspace{2pt}\hrule height 0.5pt\relax
+  \vspace{5pt}%
+}
+
+\newcommand{\cvemployer}[2]{%
+  \noindent\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X r@{}}
+    \textbf{#1} & #2 \\ 
+  \end{tabularx}\par\nobreak
+}
+
+\newcommand{\cvrole}[2]{%
+  \noindent\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X >{\raggedleft\arraybackslash}p{4cm}@{}}
+    \textit{#1} & \textit{#2} \\ 
+  \end{tabularx}\par\nobreak
+}
+
+\newcommand{\cventry}[4]{%
+  \cvemployer{#1}{#2}%
+  \cvrole{#3}{#4}%
+}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries Jordi Buscaglia}\par
+  \vspace{5pt}
+  {\small Am Elisabethgehölz 6, 20535 Hamburg\par
+  \vspace{2pt}
+  +49\,157\,53646577\enspace\textbar\enspace
+  \href{mailto:Jordi.buscaglia577@gmail.com}{Jordi.buscaglia577@gmail.com}}
+\end{center}
+
+\cvsection{Berufserfahrung}
+
+% Bitte prüfen: Beginn der Masterarbeit; Datum aus der Vorlage übernommen.
+\cventry{Fraunhofer-Institut für Siliziumtechnologie}{Itzehoe}
+  {Masterand im Bereich Mikroelektronische Systeme}{Jun. 2026 -- heute}
+\begin{itemize}
+  \item Forschung zu Retrieval-Augmented Generation (RAG) mit Fokus auf die Verbesserung des Tabellen-Parsings und die Implementierung neuer Verfahren.
+  \item Machbarkeitsstudien zur Codegenerierung mit lokalen Sprachmodellen wie Qwen, Llama und Mistral.
+\end{itemize}
+\vspace{0.5cm}
+
+\cvrole{Werkstudent im Bereich optische Systeme}{Sep. 2025 -- Jun. 2026}
+\begin{itemize}
+  \item Forschung zu Retrieval-Augmented Generation (RAG) mit Fokus auf die Verbesserung des Tabellen-Parsings und die Implementierung neuer Verfahren.
+  \item Machbarkeitsstudien zur Codegenerierung mit lokalen Sprachmodellen wie Qwen, Llama und Mistral.
+\end{itemize}
+\vspace{0.5cm}
+
+
+% Bitte prüfen: Zeitraum der Bachelorarbeit; Datum aus der Vorlage übernommen.
+\cvemployer{Philips Healthcare}{Hamburg}
+\cvrole{Bachelorand im Bereich Advanced Research and Development}{Jan. 2025 -- Sep. 2025}
+\begin{itemize}
+  \item Bachelorarbeit: \glqq Large Language Models für die Softwareentwicklung: Evaluierung der Machbarkeit lokaler Large Language Models zur Codegenerierung\grqq.
+\end{itemize}
+\vspace{0.5cm}
+
+\cvrole{Praktikant im Bereich Advanced Research and Development}{Okt. 2024 -- Jan. 2025}
+\begin{itemize}
+  \item Forschung zu Retrieval-Augmented Generation (RAG) mit Fokus auf die Verbesserung des Tabellen-Parsings und die Implementierung neuer Verfahren.
+  \item Machbarkeitsstudien zur Codegenerierung mit lokalen Sprachmodellen wie Qwen, Llama und Mistral.
+\end{itemize}
+\vspace{0.5cm}
+
+\cvrole{Werkstudent in der Testautomatisierung von Röntgendetektoren}{Jan. 2024 -- Sep. 2024}
+\begin{itemize}
+  \item Erstellung und Durchführung von Testplänen und Dauerlauftests; Anpassung der Teststände, Protokollierung von Messdaten und Nachbearbeitung von Röntgenaufnahmen zur Qualitätssicherung.
+  \item Erfahrung im technischen Projektmanagement und in der Zusammenarbeit im internationalen Konzernumfeld.
+\end{itemize}
+
+\cvsection{Bildungsweg}
+
+\cventry{Hochschule für Angewandte Wissenschaften}{Hamburg}
+  {Mikroelektronische Systeme (M.Sc.)}{2025 -- heute}
+\vspace{5pt}
+
+\cventry{Hochschule für Angewandte Wissenschaften}{Hamburg}
+  {Mechatronik (B.Sc.), Schwerpunkt Elektrische Antriebe und Robotik}{2020 -- 2025}
+\vspace{5pt}
+
+\cventry{Margaretha-Rothe-Gymnasium}{Hamburg}
+  {Leistungskurse: Mathematik, Physik, Biologie und Englisch}{2011 -- 2019}
+
+\cvsection{Kenntnisse}
+
+\begin{tabularx}{\linewidth}{@{}l >{\raggedright\arraybackslash}X@{}}
+  \textbf{Programmierung:} & Python, C \\[3pt]
+  \textbf{Software:} & MATLAB, Simulink, Altium, LTspice \\[3pt]
+  \textbf{Weitere Werkzeuge:} & Git, GitHub, Codex
+\end{tabularx}
+
+\cvsection{Sprachen}
+
+\textbf{Deutsch:} Muttersprache\quad
+\textbf{Englisch:} Verhandlungssicher\quad
+\textbf{Spanisch:} Grundkenntnisse
+
+\end{document}
